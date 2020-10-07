@@ -17,4 +17,15 @@ export async function createLogEntry(entry) {
 return response.json();
 }
 
+export async function editLogEntry(entry) {
+    const id = entry.id;
+	const response = await fetch(`${API_URL}/api/logs/update/${id}`,{
+    method: 'Put',
+    headers: {
+        'content-type': 'application/json',
+    },
+    body:JSON.stringify(entry)
+});
+return response.json();
+}
 

@@ -24,6 +24,14 @@ body {
   padding: 1rem;
 }
 
+.popup img {
+  width: auto;
+  height: 200px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
 .entry-form label, .entry-form input, .entry-form textarea, .entry-form button{
 margin: 0.5rem 0;
 display: block;
